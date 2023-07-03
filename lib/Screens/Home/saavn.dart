@@ -69,18 +69,18 @@ class _SaavnHomePageState extends State<SaavnHomePage>
   int playlistIndex = 1;
 
   Future<void> getHomePageData() async {
-    Map recievedData = await SaavnAPI().fetchHomePageData();
-    if (recievedData.isNotEmpty) {
-      Hive.box('cache').put('homepage', recievedData);
-      data = recievedData;
+    Map receivedData = await SaavnAPI().fetchHomePageData();
+    if (receivedData.isNotEmpty) {
+      Hive.box('cache').put('homepage', receivedData);
+      data = receivedData;
       lists = ['recent', 'playlist', ...?data['collections'] as List?];
       lists.insert((lists.length / 2).round(), 'likedArtists');
     }
     setState(() {});
-    recievedData = await FormatResponse.formatPromoLists(data);
-    if (recievedData.isNotEmpty) {
-      Hive.box('cache').put('homepage', recievedData);
-      data = recievedData;
+    receivedData = await FormatResponse.formatPromoLists(data);
+    if (receivedData.isNotEmpty) {
+      Hive.box('cache').put('homepage', receivedData);
+      data = receivedData;
       lists = ['recent', 'playlist', ...?data['collections'] as List?];
       lists.insert((lists.length / 2).round(), 'likedArtists');
     }
