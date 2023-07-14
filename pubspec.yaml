@@ -43,6 +43,7 @@ dependencies:
   # just_audio_libwinmedia: ^0.0.4 # For windows and linux.
   logging: ^1.1.1
   marquee: ^2.2.3
+  google_mobile_ads:
   material_design_icons_flutter: 5.0.5955-rc.1
   metadata_god: ^0.4.1
   on_audio_query: ^2.9.0
@@ -57,6 +58,7 @@ dependencies:
   url_launcher: ^6.1.10
   uuid: ^3.0.7
   youtube_explode_dart: ^1.12.4
+  rename: ^2.1.1
 
 dev_dependencies:
   flutter_test:

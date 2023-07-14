@@ -46,14 +46,21 @@ import 'package:flutter_displaymode/flutter_displaymode.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get_it/get_it.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:logging/logging.dart';
 import 'package:metadata_god/metadata_god.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:receive_sharing_intent/receive_sharing_intent.dart';
 
+Future<InitializationStatus> _initGoogleMobileAds() {
+  // TODO: Initialize Google Mobile Ads SDK
+  return MobileAds.instance.initialize();
+}
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  _initGoogleMobileAds();
   Paint.enableDithering = true;
 
   if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
@@ -292,7 +299,7 @@ class _MyAppState extends State<MyApp> {
                     : Brightness.dark,
       ),
       child: MaterialApp(
-        title: 'BlackHole',
+        title: 'JinnByte Music',
         restorationScopeId: 'blackhole',
         debugShowCheckedModeBanner: false,
         themeMode: AppTheme.themeMode,

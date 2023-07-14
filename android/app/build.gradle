@@ -39,7 +39,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.shadow.blackhole"
+        applicationId "com.jinnbyte.music.app"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode flutterVersionCode.toInteger()
@@ -83,4 +83,6 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.google.android.gms:play-services-ads:22.1.0'
+
 }

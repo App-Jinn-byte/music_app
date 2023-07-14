@@ -38,14 +38,17 @@ import 'package:blackhole/Screens/Settings/new_settings_page.dart';
 import 'package:blackhole/Screens/Top Charts/top.dart';
 import 'package:blackhole/Screens/YouTube/youtube_home.dart';
 import 'package:blackhole/Services/ext_storage_provider.dart';
+import 'package:blackhole/ad_helper.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:url_launcher/url_launcher.dart';
+const int maxFailedLoadAttempts = 3;
 
 class HomePage extends StatefulWidget {
   @override
@@ -53,6 +56,11 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  InterstitialAd? _interstitialAd;
+  BannerAd? _bannerAd;
+  RewardedInterstitialAd? _rewardedInterstitialAd;
+  int _numRewardedInterstitialLoadAttempts = 0;
+
   final ValueNotifier<int> _selectedIndex = ValueNotifier<int>(0);
   bool checked = false;
   String? appVersion;
@@ -81,6 +89,34 @@ class _HomePageState extends State<HomePage> {
     _pageController.jumpToPage(
       index,
     );
+  }
+
+  void _loadInterstitialAd() {
+    InterstitialAd.load(
+      adUnitId: AdHelper.interstitialAdUnitId,
+      request: AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (ad) {
+          ad.fullScreenContentCallback = FullScreenContentCallback(
+            onAdDismissedFullScreenContent: (ad) {
+            },
+          );
+          setState(() {
+            _interstitialAd = ad;
+          });
+        },
+        onAdFailedToLoad: (err) {
+          print('Failed to load an interstitial ad: ${err.message}');
+        },
+      ),
+    ).then((value) => showAd());
+  }
+  Future<void> showAd() async {
+    Future.delayed(Duration(seconds: 2), () {
+      if (_interstitialAd != null) {
+        _interstitialAd?.show();
+      }
+    });
   }
 
   Future<bool> handleWillPop(BuildContext context) async {
@@ -230,13 +266,87 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
+    _loadInterstitialAd();
+    _createRewardedInterstitialAd();
+    initAd();
     super.initState();
+  }
+  initAd(){
+    // TODO: Load a banner ad
+    BannerAd(
+      adUnitId: AdHelper.bannerAdUnitId,
+      request: AdRequest(),
+      size: AdSize.banner,
+      listener: BannerAdListener(
+        onAdLoaded: (ad) {
+          setState(() {
+            _bannerAd = ad as BannerAd;
+          });
+        },
+        onAdFailedToLoad: (ad, err) {
+          print('Failed to load a banner ad: ${err.message}');
+          ad.dispose();
+        },
+      ),
+    ).load().then((value) =>_showRewardedInterstitialAd());
+  }
+  void _createRewardedInterstitialAd() {
+    RewardedInterstitialAd.load(
+        adUnitId: Platform.isAndroid
+            ? 'ca-app-pub-3940256099942544/5354046379'
+            : 'ca-app-pub-3940256099942544/6978759866',
+        request: AdRequest(),
+        rewardedInterstitialAdLoadCallback: RewardedInterstitialAdLoadCallback(
+          onAdLoaded: (RewardedInterstitialAd ad) {
+            print('$ad loaded.');
+            _rewardedInterstitialAd = ad;
+            _numRewardedInterstitialLoadAttempts = 0;
+          },
+          onAdFailedToLoad: (LoadAdError error) {
+            print('RewardedInterstitialAd failed to load: $error');
+            _rewardedInterstitialAd = null;
+            _numRewardedInterstitialLoadAttempts += 1;
+            if (_numRewardedInterstitialLoadAttempts < maxFailedLoadAttempts) {
+              _createRewardedInterstitialAd();
+            }
+          },
+        ));
+  }
+  void _showRewardedInterstitialAd() {
+    if (_rewardedInterstitialAd == null) {
+      print('Warning: attempt to show rewarded interstitial before loaded.');
+      return;
+    }
+    _rewardedInterstitialAd!.fullScreenContentCallback =
+        FullScreenContentCallback(
+          onAdShowedFullScreenContent: (RewardedInterstitialAd ad) =>
+              print('$ad onAdShowedFullScreenContent.'),
+          onAdDismissedFullScreenContent: (RewardedInterstitialAd ad) {
+            print('$ad onAdDismissedFullScreenContent.');
+            ad.dispose();
+            _createRewardedInterstitialAd();
+          },
+          onAdFailedToShowFullScreenContent:
+              (RewardedInterstitialAd ad, AdError error) {
+            print('$ad onAdFailedToShowFullScreenContent: $error');
+            ad.dispose();
+            _createRewardedInterstitialAd();
+          },
+        );
+
+    _rewardedInterstitialAd!.setImmersiveMode(true);
+    _rewardedInterstitialAd!.show(
+        onUserEarnedReward: (AdWithoutView ad, RewardItem reward) {
+          print('$ad with reward $RewardItem(${reward.amount}, ${reward.type})');
+        });
+    _rewardedInterstitialAd = null;
   }
 
   @override
   void dispose() {
     _pageController.dispose();
     _scrollController.dispose();
+    _interstitialAd?.dispose();
     super.dispose();
   }
 
@@ -566,6 +676,15 @@ class _HomePageState extends State<HomePage> {
                 Expanded(
                   child: Column(
                     children: [
+                      if (_bannerAd != null)
+                        Align(
+                          alignment: Alignment.topCenter,
+                          child: Container(
+                            width: _bannerAd!.size.width.toDouble(),
+                            height: _bannerAd!.size.height.toDouble(),
+                            child: AdWidget(ad: _bannerAd!),
+                          ),
+                        ),
                       Expanded(
                         child: PageView(
                           physics: const CustomPhysics(),
@@ -576,7 +695,9 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             Stack(
                               children: [
+
                                 checkVersion(),
+
                                 NestedScrollView(
                                   physics: const BouncingScrollPhysics(),
                                   controller: _scrollController,
@@ -823,10 +944,12 @@ class _HomePageState extends State<HomePage> {
                                           ),
                                         ),
                                       ),
+
                                     ];
                                   },
                                   body: SaavnHomePage(),
                                 ),
+
                                 if (!rotated)
                                   Builder(
                                     builder: (context) => Padding(
