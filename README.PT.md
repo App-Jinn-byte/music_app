@@ -1,11 +1,11 @@
-<img width="125px" src="https://github.com/Sangwan5688/BlackHole/blob/main/assets/icon-white-trans.png" align="center" />
+<img width="125px" src="https://github.com/rajput-abdullah/blob/main/assets/icon-white-trans.png" align="center" />
 
 # BlackHole
 
 Um reprodutor de música incrível para todas as suas necessidades!
 
 [![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) ![Release](https://img.shields.io/github/v/release/Sangwan5688/BlackHole) ![Downloads](https://img.shields.io/github/downloads/Sangwan5688/BlackHole/total)
-[![Build](https://github.com/Sangwan5688/BlackHole/actions/workflows/flutter.yml/badge.svg)](https://github.com/Sangwan5688/BlackHole/actions/workflows/flutter.yml)
+[![Build](https://github.com/rajput-abdullah/actions/workflows/flutter.yml/badge.svg)](https://github.com/rajput-abdullah/actions/workflows/flutter.yml)
 
 ### Não esqueça de :star: esse repositório
 
@@ -23,7 +23,7 @@ Um reprodutor de música incrível para todas as suas necessidades!
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white"
      alt="Download from GitHub"
-     height="60">](https://github.com/Sangwan5688/BlackHole/releases)
+     height="60">](https://github.com/rajput-abdullah/releases)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white"
      alt="Join Telegram Channel"
@@ -80,7 +80,7 @@ e muito mais...
 Veja você mesmo :)
 
 ## Imagens
-<img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png?raw=true" width="32%">
+<img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png?raw=true" width="32%">
 
 ## Licença
 ```
@@ -94,7 +94,7 @@ BlackHole é distribuído na esperança de que seja útil, mas SEM NENHUMA GARAN
 sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO A UM DETERMINADO FIM.
 Consulte a GNU General Public License para obter mais detalhes.
 ```
-[Ver Licença](https://github.com/Sangwan5688/BlackHole/blob/main/LICENSE)
+[Ver Licença](https://github.com/rajput-abdullah/blob/main/LICENSE)
 
 ## Construa a partir do código-fonte
 
@@ -102,7 +102,7 @@ Consulte a GNU General Public License para obter mais detalhes.
 2. Obtenha o código-fonte mais recente do branch master.
 
 ```
-git clone https://github.com/Sangwan5688/BlackHole.git
+git clone https://github.com/rajput-abdullah.git
 ```
 
 3. Execute o aplicativo com Android Studio ou VS Code. Ou através da linha de comando:
@@ -114,11 +114,11 @@ flutter run
 
 ## Contribuição
 
-Contribuições são bem vindas. Por favor leia nosso [diretrizes de contribuição](https://github.com/Sangwan5688/BlackHole/blob/main/CONTRIBUTING.md) antes de contribuir.
+Contribuições são bem vindas. Por favor leia nosso [diretrizes de contribuição](https://github.com/rajput-abdullah/blob/main/CONTRIBUTING.md) antes de contribuir.
 
 ## Enfrentando algum problema?
 
-Olhe alguns dos [problemas](https://github.com/Sangwan5688/BlackHole/wiki/Common-Issues) e veja se pode lhe ajudar. Se seu problema não está lá, sinta-se livre para abrir um :)
+Olhe alguns dos [problemas](https://github.com/rajput-abdullah/wiki/Common-Issues) e veja se pode lhe ajudar. Se seu problema não está lá, sinta-se livre para abrir um :)
 
 ## Quer testar as versões beta? Preciso de ajuda??
 
@@ -130,4 +130,4 @@ Você pode entrar no nosso [canal](https://t.me/blackhole_official) ou [grupo](h
 
 ## O que há de novo
 
-Para ler o changelog completo, visite a [nossa wiki](https://github.com/Sangwan5688/BlackHole/wiki/Changelog)
+Para ler o changelog completo, visite a [nossa wiki](https://github.com/rajput-abdullah/wiki/Changelog)

@@ -5,7 +5,7 @@
 Tüm ihtiyaçlarınız için bir Açık Kaynaklı Müzik Çalar Uygulaması!
 
 [![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) ![Release](https://img.shields.io/github/v/release/Sangwan5688/BlackHole) ![Downloads](https://img.shields.io/github/downloads/Sangwan5688/BlackHole/total)
-[![Build](https://github.com/Sangwan5688/BlackHole/actions/workflows/flutter.yml/badge.svg)](https://github.com/Sangwan5688/BlackHole/actions/workflows/flutter.yml)
+[![Build](https://github.com/rajput-abdullah/actions/workflows/flutter.yml/badge.svg)](https://github.com/rajput-abdullah/actions/workflows/flutter.yml)
 [![Translation-Status](https://hosted.weblate.org/widgets/blackhole/-/translations/svg-badge.svg)](https://hosted.weblate.org/engage/blackhole/)
 
 ### Depoyu :star:'lamayı unutmayın!
@@ -19,7 +19,7 @@ Tüm ihtiyaçlarınız için bir Açık Kaynaklı Müzik Çalar Uygulaması!
      height="90">](https://sangwan5688.github.io/download/)
 [<img src="get_github.png"
      alt="Download from GitHub"
-     height="90">](https://github.com/Sangwan5688/BlackHole/releases)
+     height="90">](https://github.com/rajput-abdullah/releases)
 [<img src="get_telegram.png"
      alt="Join Telegram Channel"
      height="90">](https://t.me/blackhole_official)
@@ -83,7 +83,7 @@ ve çok daha fazlasını keşfedin! :O)
 
 ## Ekran Görüntüleri
 
-<img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png?raw=true" width="32%">
+<img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png?raw=true" width="32%">
 
 ## Lisans
 
@@ -112,7 +112,7 @@ how to obtain the original software, should clearly STATE ALL CHANGES made and s
 Use of this software under any "non-free" license is NOT permitted.
 ```
 
-[GNU General Public License](https://github.com/Sangwan5688/BlackHole/blob/main/LICENSE) ile daha fazlasına göz atın!
+[GNU General Public License](https://github.com/rajput-abdullah/blob/main/LICENSE) ile daha fazlasına göz atın!
 
 ## Kaynaktan Derleme
 
@@ -120,7 +120,7 @@ Use of this software under any "non-free" license is NOT permitted.
 2. Ana bölümden en son kaynak kodunu alın.
 
 ```
-git clone https://github.com/Sangwan5688/BlackHole.git
+git clone https://github.com/rajput-abdullah.git
 ```
 
 3. Uygulamayı Android Studio veya VS Code ile çalıştırın. Veya komut satırı:
@@ -132,11 +132,11 @@ flutter run
 
 ## Katkıda Bulunun
 
-Katkılar kabul edilir. Lütfen katkıda bulunmadan önce [katkıda bulunma yönergelerimizi](https://github.com/Sangwan5688/BlackHole/blob/main/CONTRIBUTING.md) okuyun.
+Katkılar kabul edilir. Lütfen katkıda bulunmadan önce [katkıda bulunma yönergelerimizi](https://github.com/rajput-abdullah/blob/main/CONTRIBUTING.md) okuyun.
 
 ## Herhangi bir sorunla mı karşılaşıyorsunuz?
 
-Karşılaşabileceğiniz bazı [yaygın sorunlara](https://github.com/Sangwan5688/BlackHole/wiki/Common-Issues) bir göz atın. Sorununuz orada değilse, bir Konu açmaktan çekinmeyin :)
+Karşılaşabileceğiniz bazı [yaygın sorunlara](https://github.com/rajput-abdullah/wiki/Common-Issues) bir göz atın. Sorununuz orada değilse, bir Konu açmaktan çekinmeyin :)
 
 ## Beta Sürümlerini test etmek ister misiniz? Yardıma mı ihtiyacınız var?
 
@@ -148,7 +148,7 @@ Herhangi bir sorunuz varsa veya bir konuda yardıma ihtiyacınız varsa [Telegra
 
 ## Yenilikler Neler?
 
-Tüm değişiklik günlüğünü okumak için [wiki page](https://github.com/Sangwan5688/BlackHole/wiki/Changelog) sayfasını ziyaret edin!
+Tüm değişiklik günlüğünü okumak için [wiki page](https://github.com/rajput-abdullah/wiki/Changelog) sayfasını ziyaret edin!
 
 
 ## Feragatname

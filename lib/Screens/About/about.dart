@@ -1,5 +1,5 @@
 /*
- *  This file is part of BlackHole (https://github.com/Sangwan5688/BlackHole).
+ *  This file is part of BlackHole (https://github.com/rajput-abdullah).
  * 
  * BlackHole is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -104,7 +104,7 @@ class _AboutScreenState extends State<AboutScreen> {
                           width: 150,
                           child: Image(
                             image: AssetImage('assets/splash.png'),
-                          ),
+                            ),
                         ),
                       ),
                       const SizedBox(height: 20),
@@ -134,7 +134,7 @@ class _AboutScreenState extends State<AboutScreen> {
                           onPressed: () {
                             launchUrl(
                               Uri.parse(
-                                'https://github.com/Sangwan5688/BlackHole',
+                                'https://github.com/rajput-abdullah',
                               ),
                               mode: LaunchMode.externalApplication,
                             );

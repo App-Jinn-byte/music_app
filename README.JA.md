@@ -5,7 +5,7 @@
 オープンソースの音楽プレイヤーアプリです！
 
 [![made-with-flutter](https://img.shields.io/badge/Made%20with-Flutter-1f425f.svg)](https://flutter.dev/) ![Release](https://img.shields.io/github/v/release/Sangwan5688/BlackHole) ![Downloads](https://img.shields.io/github/downloads/Sangwan5688/BlackHole/total)
-[![Build](https://github.com/Sangwan5688/BlackHole/actions/workflows/flutter.yml/badge.svg)](https://github.com/Sangwan5688/BlackHole/actions/workflows/flutter.yml)
+[![Build](https://github.com/rajput-abdullah/actions/workflows/flutter.yml/badge.svg)](https://github.com/rajput-abdullah/actions/workflows/flutter.yml)
 [![Translation-Status](https://hosted.weblate.org/widgets/blackhole/-/translations/svg-badge.svg)](https://hosted.weblate.org/engage/blackhole/)
 
 ### リポジトリに:star:をつけるのを忘れずに
@@ -24,7 +24,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white"
      alt="Download from GitHub"
-     height="60">](https://github.com/Sangwan5688/BlackHole/releases)
+     height="60">](https://github.com/rajput-abdullah/releases)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [<img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white"
      alt="Join Telegram Channel"
@@ -83,7 +83,7 @@
 
 ## スクリーンショット
 
-<img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png?raw=true" width="32%"> <img src="https://github.com/Sangwan5688/BlackHole/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png?raw=true" width="32%">
+<img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png?raw=true" width="32%"> <img src="https://github.com/rajput-abdullah/blob/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png?raw=true" width="32%">
 
 ## ライセンス
 
@@ -112,7 +112,7 @@ how to obtain the original software, should clearly STATE ALL CHANGES made and s
 Use of this software under any "non-free" license is NOT permitted.
 ```
 
-詳しくは、[GNU 一般公衆利用許諾契約書](https://github.com/Sangwan5688/BlackHole/blob/main/LICENSE)をご覧ください。
+詳しくは、[GNU 一般公衆利用許諾契約書](https://github.com/rajput-abdullah/blob/main/LICENSE)をご覧ください。
 
 ## ソースからのビルド
 
@@ -120,7 +120,7 @@ Use of this software under any "non-free" license is NOT permitted.
 2. masterブランチから最新のソースコードを取得します。
 
 ```
-git clone https://github.com/Sangwan5688/BlackHole.git
+git clone https://github.com/rajput-abdullah.git
 ```
 
 3. Android StudioまたはVS Codeでアプリを実行します。もしくはコマンドラインから:
@@ -132,11 +132,11 @@ flutter run
 
 ## コントリビュート
 
-コントリビュートを歓迎します。コントリビュートする前に、[コントリビュートガイドライン](https://github.com/Sangwan5688/BlackHole/blob/main/CONTRIBUTING.md)をお読みください。
+コントリビュートを歓迎します。コントリビュートする前に、[コントリビュートガイドライン](https://github.com/rajput-abdullah/blob/main/CONTRIBUTING.md)をお読みください。
 
 ## 何か問題がありますか？
 
-お客様が直面する可能性のある[一般的な問題](https://github.com/Sangwan5688/BlackHole/wiki/Common-Issues)をご覧ください。もしあなたの問題がそこにない場合は、お気軽にIssueをご作成ください :)
+お客様が直面する可能性のある[一般的な問題](https://github.com/rajput-abdullah/wiki/Common-Issues)をご覧ください。もしあなたの問題がそこにない場合は、お気軽にIssueをご作成ください :)
 
 ## ベータ版をテストしたいですか？ヘルプが必要ですか？？
 
@@ -148,4 +148,4 @@ flutter run
 
 ## 最新情報
 
-全てのchangelogは[wikiページ](https://github.com/Sangwan5688/BlackHole/wiki/Changelog)をご覧ください
+全てのchangelogは[wikiページ](https://github.com/rajput-abdullah/wiki/Changelog)をご覧ください
