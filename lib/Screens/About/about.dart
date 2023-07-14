@@ -103,7 +103,7 @@ class _AboutScreenState extends State<AboutScreen> {
                         child: const SizedBox(
                           width: 150,
                           child: Image(
-                            image: AssetImage('assets/ic_launcher.png'),
+                            image: AssetImage('assets/splash.png'),
                           ),
                         ),
                       ),
@@ -172,7 +172,7 @@ class _AboutScreenState extends State<AboutScreen> {
                         onPressed: () {
                           launchUrl(
                             Uri.parse(
-                              'https://www.buymeacoffee.com/ankitsangwan',
+                              'https://www.buymeacoffee.com/abdullahrar',
                             ),
                             mode: LaunchMode.externalApplication,
                           );
@@ -184,56 +184,66 @@ class _AboutScreenState extends State<AboutScreen> {
                           ),
                         ),
                       ),
-                      Text(
-                        AppLocalizations.of(context)!.or,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(fontSize: 12),
-                      ),
-                      TextButton(
-                        style: TextButton.styleFrom(
-                          padding: EdgeInsets.zero,
-                          backgroundColor: Colors.transparent,
-                          foregroundColor: Colors.transparent,
-                        ),
-                        onPressed: () {
-                          const String upiUrl =
-                              'upi://pay?pa=ankit.sangwan.5688@oksbi&pn=BlackHole&mc=5732&aid=uGICAgIDn98OpSw&tr=BCR2DN6T37O6DB3Q';
-                          launchUrl(
-                            Uri.parse(upiUrl),
-                            mode: LaunchMode.externalApplication,
-                          );
-                        },
-                        onLongPress: () {
-                          copyToClipboard(
-                            context: context,
-                            text: 'ankit.sangwan.5688@oksbi',
-                            displayText: AppLocalizations.of(
-                              context,
-                            )!
-                                .upiCopied,
-                          );
-                        },
-                        child: SizedBox(
-                          width: MediaQuery.of(context).size.width / 2,
-                          child: Image(
-                            image: AssetImage(
-                              Theme.of(context).brightness == Brightness.dark
-                                  ? 'assets/gpay-white.png'
-                                  : 'assets/gpay-white.png',
-                            ),
-                          ),
-                        ),
-                      ),
-                      Text(
-                        AppLocalizations.of(context)!.sponsor,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(fontSize: 12),
-                      ),
+                      // Text(
+                      //   AppLocalizations.of(context)!.or,
+                      //   textAlign: TextAlign.center,
+                      //   style: const TextStyle(fontSize: 12),
+                      // ),
+                      // TextButton(
+                      //   style: TextButton.styleFrom(
+                      //     padding: EdgeInsets.zero,
+                      //     backgroundColor: Colors.transparent,
+                      //     foregroundColor: Colors.transparent,
+                      //   ),
+                      //   onPressed: () {
+                      //     const String upiUrl =
+                      //         'upi://pay?pa=ankit.sangwan.5688@oksbi&pn=BlackHole&mc=5732&aid=uGICAgIDn98OpSw&tr=BCR2DN6T37O6DB3Q';
+                      //     launchUrl(
+                      //       Uri.parse(upiUrl),
+                      //       mode: LaunchMode.externalApplication,
+                      //     );
+                      //   },
+                      //   onLongPress: () {
+                      //     copyToClipboard(
+                      //       context: context,
+                      //       text: 'ankit.sangwan.5688@oksbi',
+                      //       displayText: AppLocalizations.of(
+                      //         context,
+                      //       )!
+                      //           .upiCopied,
+                      //     );
+                      //   },
+                      //   child: SizedBox(
+                      //     width: MediaQuery.of(context).size.width / 2,
+                      //     child: Image(
+                      //       image: AssetImage(
+                      //         Theme.of(context).brightness == Brightness.dark
+                      //             ? 'assets/gpay-white.png'
+                      //             : 'assets/gpay-white.png',
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
+                      // Text(
+                      //   AppLocalizations.of(context)!.sponsor,
+                      //   textAlign: TextAlign.center,
+                      //   style: const TextStyle(fontSize: 12),
+                      // ),
                     ],
                   ),
                   SizedBox(
                     height: separationHeight,
                   ),
+                  SizedBox(
+                    height: separationHeight,
+                  ),
+                  SizedBox(
+                    height: separationHeight,
+                  ),
+                  SizedBox(
+                    height: separationHeight,
+                  ),
+
                   SafeArea(
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(5, 30, 5, 20),

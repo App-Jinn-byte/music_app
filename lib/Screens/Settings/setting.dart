@@ -4014,68 +4014,68 @@ class _SettingPageState extends State<SettingPage>
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceEvenly,
                                       children: [
-                                        Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            IconButton(
-                                              icon: const Icon(
-                                                MdiIcons.gmail,
-                                              ),
-                                              iconSize: 40,
-                                              tooltip: AppLocalizations.of(
-                                                context,
-                                              )!
-                                                  .gmail,
-                                              onPressed: () {
-                                                Navigator.pop(context);
-                                                launchUrl(
-                                                  Uri.parse(
-                                                    'https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A%3Fto%3Dblackholeyoucantescape%40gmail.com%26subject%3DRegarding%2520Mobile%2520App',
-                                                  ),
-                                                  mode: LaunchMode
-                                                      .externalApplication,
-                                                );
-                                              },
-                                            ),
-                                            Text(
-                                              AppLocalizations.of(
-                                                context,
-                                              )!
-                                                  .gmail,
-                                            ),
-                                          ],
-                                        ),
-                                        Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            IconButton(
-                                              icon: const Icon(
-                                                MdiIcons.telegram,
-                                              ),
-                                              iconSize: 40,
-                                              tooltip: AppLocalizations.of(
-                                                context,
-                                              )!
-                                                  .tg,
-                                              onPressed: () {
-                                                Navigator.pop(context);
-                                                launchUrl(
-                                                  Uri.parse(
-                                                    'https://t.me/joinchat/fHDC1AWnOhw0ZmI9',
-                                                  ),
-                                                  mode: LaunchMode
-                                                      .externalApplication,
-                                                );
-                                              },
-                                            ),
-                                            Text(
-                                              AppLocalizations.of(
-                                                context,
-                                              )!
-                                                  .tg,
-                                            ),
-                                          ],
-                                        ),
+                                        // Column(
+                                        //   mainAxisSize: MainAxisSize.min,
+                                        //   children: [
+                                        //     IconButton(
+                                        //       icon: const Icon(
+                                        //         MdiIcons.gmail,
+                                        //       ),
+                                        //       iconSize: 40,
+                                        //       tooltip: AppLocalizations.of(
+                                        //         context,
+                                        //       )!
+                                        //           .gmail,
+                                        //       onPressed: () {
+                                        //         Navigator.pop(context);
+                                        //         launchUrl(
+                                        //           Uri.parse(
+                                        //             'https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A%3Fto%3Dblackholeyoucantescape%40gmail.com%26subject%3DRegarding%2520Mobile%2520App',
+                                        //           ),
+                                        //           mode: LaunchMode
+                                        //               .externalApplication,
+                                        //         );
+                                        //       },
+                                        //     ),
+                                        //     Text(
+                                        //       AppLocalizations.of(
+                                        //         context,
+                                        //       )!
+                                        //           .gmail,
+                                        //     ),
+                                        //   ],
+                                        // ),
+                                        // Column(
+                                        //   mainAxisSize: MainAxisSize.min,
+                                        //   children: [
+                                        //     IconButton(
+                                        //       icon: const Icon(
+                                        //         MdiIcons.telegram,
+                                        //       ),
+                                        //       iconSize: 40,
+                                        //       tooltip: AppLocalizations.of(
+                                        //         context,
+                                        //       )!
+                                        //           .tg,
+                                        //       onPressed: () {
+                                        //         Navigator.pop(context);
+                                        //         launchUrl(
+                                        //           Uri.parse(
+                                        //             'https://t.me/joinchat/fHDC1AWnOhw0ZmI9',
+                                        //           ),
+                                        //           mode: LaunchMode
+                                        //               .externalApplication,
+                                        //         );
+                                        //       },
+                                        //     ),
+                                        //     Text(
+                                        //       AppLocalizations.of(
+                                        //         context,
+                                        //       )!
+                                        //           .tg,
+                                        //     ),
+                                        //   ],
+                                        // ),
                                         Column(
                                           mainAxisSize: MainAxisSize.min,
                                           children: [
@@ -4092,7 +4092,7 @@ class _SettingPageState extends State<SettingPage>
                                                 Navigator.pop(context);
                                                 launchUrl(
                                                   Uri.parse(
-                                                    'https://instagram.com/sangwan5688',
+                                                    'https://www.instagram.com/abdullah_rajput',
                                                   ),
                                                   mode: LaunchMode
                                                       .externalApplication,
